@@ -1,0 +1,30 @@
+2024-05-28 13:46:36.909 DEBUG Starting test: AtataSampleProject.SampleTests.TestA
+2024-05-28 13:46:36.914 TRACE > Initialize AtataContext
+2024-05-28 13:46:36.914 TRACE - Use: "Atata.json" config
+2024-05-28 13:46:36.914 TRACE - Use: "Atata.local.json" config
+2024-05-28 13:46:36.915 TRACE - Set: BaseUrl=https://demo.atata.io/
+2024-05-28 13:46:36.915 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-28 13:46:36.915 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-28 13:46:36.915 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-28 13:46:36.915 TRACE - Set: Culture=en-US
+2024-05-28 13:46:36.915 TRACE - Set: Artifacts=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\artifacts\20240528T134633\SampleTests\TestA
+2024-05-28 13:46:36.916 TRACE - > Initialize Driver
+2024-05-28 13:46:36.916 TRACE - - Created ChromeDriverService { Port=56833, ExecutablePath=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\drivers\chrome\125.0.6422.78\chromedriver.exe }
+2024-05-28 13:46:38.131 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=7c8f201413d8149d79a1feb83c5a39bb }
+2024-05-28 13:46:38.132 TRACE - < Initialize Driver (1.216s)
+2024-05-28 13:46:38.132 TRACE < Initialize AtataContext (1.218s)
+2024-05-28 13:46:38.134  INFO > Go to "Products" page by URL https://demo.atata.io/products
+2024-05-28 13:46:38.409  INFO < Go to "Products" page by URL https://demo.atata.io/products (0.274s)
+2024-05-28 13:46:38.411 TRACE > Execute trigger VerifyTitleAttribute { Values=["Products - Atata Sample App"], Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Products" page
+2024-05-28 13:46:38.415  INFO - > Assert: title should equal "Products - Atata Sample App"
+2024-05-28 13:46:38.927  INFO - < Assert: title should equal "Products - Atata Sample App" (0.511s)
+2024-05-28 13:46:38.927 TRACE < Execute trigger VerifyTitleAttribute { Values=["Products - Atata Sample App"], Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Products" page (0.516s)
+2024-05-28 13:46:38.928  INFO > Assert: title should contain "Products - Atata Sample App"
+2024-05-28 13:46:38.932  INFO < Assert: title should contain "Products - Atata Sample App" (0.004s)
+2024-05-28 13:46:38.933 TRACE > Deinitialize AtataContext
+2024-05-28 13:46:39.120 TRACE < Deinitialize AtataContext (0.186s)
+2024-05-28 13:46:39.123 DEBUG Finished test
+      Total time: 2.215s
+  Initialization: 1.227s | 55.4 %
+       Test body: 0.800s | 36.1 %
+Deinitialization: 0.187s |  8.5 %

@@ -1,0 +1,46 @@
+2024-05-28 13:05:06.856 DEBUG Starting test suite: AtataSampleProject.SampleTests
+2024-05-28 13:05:06.952 TRACE > Initialize AtataContext
+2024-05-28 13:05:06.970 TRACE - Use: "Atata.json" config
+2024-05-28 13:05:06.971 TRACE - Use: "Atata.local.json" config
+2024-05-28 13:05:06.971 TRACE - Set: BaseUrl=https://demo.atata.io/
+2024-05-28 13:05:06.973 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-28 13:05:06.973 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-28 13:05:06.973 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-28 13:05:06.973 TRACE - Set: Culture=en-US
+2024-05-28 13:05:06.974 TRACE - Set: Artifacts=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\artifacts\20240528T130506\SampleTests
+2024-05-28 13:05:06.975 TRACE - > Initialize Driver
+2024-05-28 13:05:06.979 TRACE - - Created ChromeDriverService { Port=57826, ExecutablePath=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\drivers\chrome\125.0.6422.78\chromedriver.exe }
+2024-05-28 13:05:07.850 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=736ccb2f5ae974ed2a90e603ba2afcdf }
+2024-05-28 13:05:07.853 TRACE - < Initialize Driver (0.876s)
+2024-05-28 13:05:07.854 TRACE < Initialize AtataContext (0.901s)
+2024-05-28 13:05:07.878  INFO > Go to "Sign In" page
+2024-05-28 13:05:07.891  INFO < Go to "Sign In" page (0.012s)
+2024-05-28 13:05:07.899 TRACE > Execute trigger VerifyH1Attribute { Index=-1, Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page
+2024-05-28 13:05:07.905  INFO - > Assert: "Sign In" <h1> heading should be present
+2024-05-28 13:05:07.918 TRACE - - > Find visible element by XPath ".//h1[normalize-space(.) = 'Sign In']" in ChromeDriver
+2024-05-28 13:05:12.931 TRACE - - < Find visible element by XPath ".//h1[normalize-space(.) = 'Sign In']" in ChromeDriver (5.013s) >> Atata.ElementNotFoundException: Unable to locate visible element:...
+2024-05-28 13:05:12.945 ERROR - - Wrong "Sign In" <h1> heading presence
+Expected: should be present
+  Actual: unable to locate visible element:
+- By: XPath ".//h1[normalize-space(.) = 'Sign In']"
+- Search time: 5.01s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+   at Atata.AssertionVerificationStrategy.ReportFailure(String message, Exception exception)
+   at Atata.IUIComponentVerificationProviderExtensions.<>c__DisplayClass2_0`2.<VerifyExistence>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.IUIComponentVerificationProviderExtensions.VerifyExistence[TComponent,TOwner](IUIComponentVerificationProvider`2 verifier, String expectedMessage, String verificationStateName, Nullable`1 visibility)
+   at Atata.IUIComponentVerificationProviderExtensions.BePresent[TComponent,TOwner](IUIComponentVerificationProvider`2 verifier)
+   at Atata.VerifyHeadingTriggerAttribute.Verify[TH,TOwner](TriggerContext`1 context, String[] values)
+   at Atata.VerifyH1Attribute.OnExecute[TOwner](TriggerContext`1 context, String[] values)
+   at Atata.TermVerificationTriggerAttribute.Execute[TOwner](TriggerContext`1 context)
+   at Atata.UIComponent`1.<>c__DisplayClass74_3.<ExecuteTriggers>b__3()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.UIComponent`1.ExecuteTriggers(TriggerEvents on)
+   at Atata.PageObject`1.CompleteInit()
+   at Atata.AtataNavigator.GoToInitialPageObject[T](T pageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at Atata.Go.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at AtataSampleProject.UITestFixture.Login() in C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\UITestFixture.cs:line 18
+2024-05-28 13:05:12.947  INFO - < Assert: "Sign In" <h1> heading should be present (5.042s) >> NUnit.Framework.AssertionException: Wrong "Sign In" <h1> heading presence...
+2024-05-28 13:05:12.949 TRACE < Execute trigger VerifyH1Attribute { Index=-1, Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page (5.049s) >> NUnit.Framework.AssertionException: Wrong "Sign In" <h1> heading presence...

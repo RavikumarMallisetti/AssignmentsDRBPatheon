@@ -1,0 +1,41 @@
+2024-05-27 15:07:33.923 DEBUG Starting test suite: AtataSampleProject.SampleTests
+2024-05-27 15:07:34.016 TRACE > Initialize AtataContext
+2024-05-27 15:07:34.034 TRACE - Use: "Atata.json" config
+2024-05-27 15:07:34.035 TRACE - Use: "Atata.local.json" config
+2024-05-27 15:07:34.035 TRACE - Set: BaseUrl=https://demo.atata.io/
+2024-05-27 15:07:34.036 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-27 15:07:34.037 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-27 15:07:34.037 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-27 15:07:34.037 TRACE - Set: Culture=en-US
+2024-05-27 15:07:34.038 TRACE - Set: Artifacts=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\artifacts\20240527T150733\SampleTests
+2024-05-27 15:07:34.039 TRACE - > Initialize Driver
+2024-05-27 15:07:34.044 TRACE - - Created ChromeDriverService { Port=59944, ExecutablePath=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\drivers\chrome\125.0.6422.78\chromedriver.exe }
+2024-05-27 15:07:35.057 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=2ba61c71fe71bf4cfe226fb26ed36b03 }
+2024-05-27 15:07:35.060 TRACE - < Initialize Driver (1.019s)
+2024-05-27 15:07:35.061 TRACE < Initialize AtataContext (1.045s)
+2024-05-27 15:07:35.084  INFO > Go to "Sign In" page by URL https://demo.atata.io/signin
+2024-05-27 15:07:35.748  INFO < Go to "Sign In" page by URL https://demo.atata.io/signin (0.663s)
+2024-05-27 15:07:35.756 TRACE > Execute trigger VerifyTitleAttribute { Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page
+2024-05-27 15:07:35.761  INFO - > Assert: title should equal "Sign In"
+2024-05-27 15:07:40.783 ERROR - - Wrong title
+Expected: "Sign In"
+  Actual: "Sign In - Atata Sample App"
+   at Atata.AssertionVerificationStrategy.ReportFailure(String message, Exception exception)
+   at Atata.IObjectVerificationProviderExtensions.<>c__DisplayClass5_0`2.<Satisfy>g__ExecuteVerification|0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.VerificationUtils.Verify[TData,TOwner](IObjectVerificationProvider`2 verifier, Action verificationAction, String expectedMessage, TData[] arguments)
+   at Atata.IObjectVerificationProviderExtensions.Satisfy[TObject,TOwner](IObjectVerificationProvider`2 verifier, Func`2 predicate, String message, TObject[] args)
+   at Atata.IObjectVerificationProviderExtensions.MatchAny[TOwner](IObjectVerificationProvider`2 verifier, TermMatch match, String[] expected)
+   at Atata.VerifyTitleAttribute.OnExecute[TOwner](TriggerContext`1 context, String[] values)
+   at Atata.TermVerificationTriggerAttribute.Execute[TOwner](TriggerContext`1 context)
+   at Atata.UIComponent`1.<>c__DisplayClass74_3.<ExecuteTriggers>b__3()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.UIComponent`1.ExecuteTriggers(TriggerEvents on)
+   at Atata.PageObject`1.CompleteInit()
+   at Atata.AtataNavigator.GoToInitialPageObject[T](T pageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at Atata.Go.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at AtataSampleProject.UITestFixture.Login() in C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\UITestFixture.cs:line 18
+2024-05-27 15:07:40.786  INFO - < Assert: title should equal "Sign In" (5.024s) >> NUnit.Framework.AssertionException: Wrong title...
+2024-05-27 15:07:40.787 TRACE < Execute trigger VerifyTitleAttribute { Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page (5.030s) >> NUnit.Framework.AssertionException: Wrong title...

@@ -1,0 +1,58 @@
+2024-05-29 11:19:31.888 DEBUG Starting test: AtataSampleProject.SampleTests.TestA
+2024-05-29 11:19:32.065 TRACE > Initialize AtataContext
+2024-05-29 11:19:32.095 TRACE - Use: "Atata.json" config
+2024-05-29 11:19:32.096 TRACE - Use: "Atata.local.json" config
+2024-05-29 11:19:32.096 TRACE - Set: BaseUrl=https://demo.atata.io/
+2024-05-29 11:19:32.099 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-29 11:19:32.099 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-29 11:19:32.100 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-29 11:19:32.100 TRACE - Set: Culture=en-US
+2024-05-29 11:19:32.100 TRACE - Set: Artifacts=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\artifacts\20240529T111931\SampleTests\TestA
+2024-05-29 11:19:32.102 TRACE - > Initialize Driver
+2024-05-29 11:19:32.109 TRACE - - Created ChromeDriverService { Port=59174, ExecutablePath=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\drivers\chrome\125.0.6422.78\chromedriver.exe }
+2024-05-29 11:19:34.305 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=92a18aff631f1fe80c5e4124edda7de7 }
+2024-05-29 11:19:34.315 TRACE - < Initialize Driver (2.206s)
+2024-05-29 11:19:34.317 TRACE < Initialize AtataContext (2.251s)
+2024-05-29 11:19:34.397  INFO > Go to "Sign In" page by URL https://demo.atata.io/signin
+2024-05-29 11:19:36.103  INFO < Go to "Sign In" page by URL https://demo.atata.io/signin (1.705s)
+2024-05-29 11:19:36.114 TRACE > Execute trigger VerifyH1Attribute { Index=-1, Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page
+2024-05-29 11:19:36.120  INFO - > Assert: "Sign In" <h1> heading should be present
+2024-05-29 11:19:36.136 TRACE - - > Find visible element by XPath ".//h1[normalize-space(.) = 'Sign In']" in ChromeDriver
+2024-05-29 11:19:41.149 TRACE - - < Find visible element by XPath ".//h1[normalize-space(.) = 'Sign In']" in ChromeDriver (5.012s) >> Atata.ElementNotFoundException: Unable to locate visible element:...
+2024-05-29 11:19:41.170 ERROR - - Wrong "Sign In" <h1> heading presence
+Expected: should be present
+  Actual: unable to locate visible element:
+- By: XPath ".//h1[normalize-space(.) = 'Sign In']"
+- Search time: 5.009s
+- Search options: {Visibility=Visible, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+   at Atata.AssertionVerificationStrategy.ReportFailure(String message, Exception exception)
+   at Atata.IUIComponentVerificationProviderExtensions.<>c__DisplayClass2_0`2.<VerifyExistence>b__0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.IUIComponentVerificationProviderExtensions.VerifyExistence[TComponent,TOwner](IUIComponentVerificationProvider`2 verifier, String expectedMessage, String verificationStateName, Nullable`1 visibility)
+   at Atata.IUIComponentVerificationProviderExtensions.BePresent[TComponent,TOwner](IUIComponentVerificationProvider`2 verifier)
+   at Atata.VerifyHeadingTriggerAttribute.Verify[TH,TOwner](TriggerContext`1 context, String[] values)
+   at Atata.VerifyH1Attribute.OnExecute[TOwner](TriggerContext`1 context, String[] values)
+   at Atata.TermVerificationTriggerAttribute.Execute[TOwner](TriggerContext`1 context)
+   at Atata.UIComponent`1.<>c__DisplayClass74_3.<ExecuteTriggers>b__3()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.UIComponent`1.ExecuteTriggers(TriggerEvents on)
+   at Atata.PageObject`1.CompleteInit()
+   at Atata.AtataNavigator.GoToInitialPageObject[T](T pageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at Atata.Go.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at AtataSampleProject.UITestFixture.LoginAndNavigateToProductsPage() in C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\UITestFixture.cs:line 19
+   at AtataSampleProject.SampleTests.TestA() in C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\SampleTests.cs:line 17
+2024-05-29 11:19:41.174  INFO - < Assert: "Sign In" <h1> heading should be present (5.054s) >> NUnit.Framework.AssertionException: Wrong "Sign In" <h1> heading presence...
+2024-05-29 11:19:41.176 TRACE < Execute trigger VerifyH1Attribute { Index=-1, Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page (5.061s) >> NUnit.Framework.AssertionException: Wrong "Sign In" <h1> heading presence...
+2024-05-29 11:19:41.190 TRACE > Deinitialize AtataContext
+2024-05-29 11:19:41.211 TRACE - > Take screenshot #01 Failed
+2024-05-29 11:19:41.469 TRACE - < Take screenshot #01 Failed (0.257s) >> "01 Sign In page - Failed.png"
+2024-05-29 11:19:41.470 TRACE - > Take page snapshot #01 Failed
+2024-05-29 11:19:41.605 TRACE - < Take page snapshot #01 Failed (0.135s) >> "01 Sign In page - Failed.mhtml"
+2024-05-29 11:19:42.011 TRACE < Deinitialize AtataContext (0.821s)
+2024-05-29 11:19:42.016 DEBUG Finished test
+      Total time: 10.239s
+  Initialization:  2.545s | 24.9 %
+       Test body:  6.872s | 67.1 %
+Deinitialization:  0.822s |  8.0 %

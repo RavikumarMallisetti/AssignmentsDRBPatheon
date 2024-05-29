@@ -1,0 +1,26 @@
+2024-05-24 13:07:17.063 DEBUG Starting test: AtataSampleProject.SampleTests.SampleTest
+2024-05-24 13:07:17.218 TRACE > Initialize AtataContext
+2024-05-24 13:07:17.252 TRACE - Use: "Atata.json" config
+2024-05-24 13:07:17.253 TRACE - Use: "Atata.local.json" config
+2024-05-24 13:07:17.253 TRACE - Set: BaseUrl=https://www.google.com/
+2024-05-24 13:07:17.255 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-24 13:07:17.256 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-24 13:07:17.256 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-24 13:07:17.256 TRACE - Set: Culture=en-US
+2024-05-24 13:07:17.257 TRACE - Set: Artifacts=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\artifacts\20240524T130716\SampleTests\SampleTest
+2024-05-24 13:07:17.258 TRACE - > Initialize Driver
+2024-05-24 13:07:17.264 TRACE - - Created ChromeDriverService { Port=62309, ExecutablePath=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\drivers\chrome\125.0.6422.78\chromedriver.exe }
+2024-05-24 13:07:18.374 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=cc0a7f1d4d9c9787dae44f97efd5ae1c }
+2024-05-24 13:07:18.382 TRACE - < Initialize Driver (1.118s)
+2024-05-24 13:07:18.384 TRACE < Initialize AtataContext (1.166s)
+2024-05-24 13:07:18.441  INFO > Go to "<ordinary>" page by URL https://www.google.com/
+2024-05-24 13:07:20.559  INFO < Go to "<ordinary>" page by URL https://www.google.com/ (2.118s)
+2024-05-24 13:07:20.570  INFO > Assert: title should contain "Google"
+2024-05-24 13:07:20.585  INFO < Assert: title should contain "Google" (0.014s)
+2024-05-24 13:07:20.586 TRACE > Deinitialize AtataContext
+2024-05-24 13:07:20.948 TRACE < Deinitialize AtataContext (0.361s)
+2024-05-24 13:07:20.954 DEBUG Finished test
+      Total time: 3.961s
+  Initialization: 1.398s | 35.3 %
+       Test body: 2.200s | 55.5 %
+Deinitialization: 0.362s |  9.2 %

@@ -1,0 +1,68 @@
+2024-05-27 12:43:19.806 DEBUG Starting test: AtataSampleProject.SampleTests.TestA
+2024-05-27 12:43:19.903 TRACE > Initialize AtataContext
+2024-05-27 12:43:19.921 TRACE - Use: "Atata.json" config
+2024-05-27 12:43:19.921 TRACE - Use: "Atata.local.json" config
+2024-05-27 12:43:19.921 TRACE - Set: BaseUrl=https://demo.atata.io/
+2024-05-27 12:43:19.923 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-27 12:43:19.923 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-27 12:43:19.923 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-27 12:43:19.924 TRACE - Set: Culture=en-US
+2024-05-27 12:43:19.924 TRACE - Set: Artifacts=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\artifacts\20240527T124319\SampleTests\TestA
+2024-05-27 12:43:19.925 TRACE - > Initialize Driver
+2024-05-27 12:43:19.930 TRACE - - Created ChromeDriverService { Port=56893, ExecutablePath=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\drivers\chrome\125.0.6422.78\chromedriver.exe }
+2024-05-27 12:43:21.003 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=b3a525868de0a0973d71735db1e1d473 }
+2024-05-27 12:43:21.006 TRACE - < Initialize Driver (1.078s)
+2024-05-27 12:43:21.007 TRACE < Initialize AtataContext (1.104s)
+2024-05-27 12:43:21.042  INFO > Go to "Products" page by URL https://demo.atata.io/products
+2024-05-27 12:43:21.743  INFO < Go to "Products" page by URL https://demo.atata.io/products (0.700s)
+2024-05-27 12:43:21.750  INFO > Assert: title should contain "Products - Atata Sample App"
+2024-05-27 12:43:22.781  INFO < Assert: title should contain "Products - Atata Sample App" (1.031s)
+2024-05-27 12:43:22.785  INFO > Go to "Products" page by URL https://demo.atata.io/products
+2024-05-27 12:43:22.863  INFO < Go to "Products" page by URL https://demo.atata.io/products (0.077s)
+2024-05-27 12:43:22.888 TRACE > Find element by XPath ".//*[normalize-space(@id) = 'products']/descendant-or-self::table" in ChromeDriver
+2024-05-27 12:43:27.918 TRACE < Find element by XPath ".//*[normalize-space(@id) = 'products']/descendant-or-self::table" in ChromeDriver (5.030s) >> Atata.ElementNotFoundException: Unable to locate element:...
+2024-05-27 12:43:27.928 TRACE > Deinitialize AtataContext
+2024-05-27 12:43:27.938 ERROR - Atata.ElementNotFoundException : Unable to locate element:
+- By: XPath ".//*[normalize-space(@id) = 'products']/descendant-or-self::table"
+- Search time: 5.019s
+- Search options: {Visibility=Any, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+   at Atata.ExtendedSearchContext`1.Find(By by)
+   at Atata.ExtendedSearchContext`1.FindElement(By by)
+   at Atata.ISearchContextExtensions.Get[T](T searchContext, By by)
+   at Atata.ISearchContextLoggingExtensions.<>c__DisplayClass0_0.<GetWithLogging>b__0()
+   at Atata.LogManager.ExecuteSection[TResult](LogSection section, Func`1 function)
+   at Atata.ISearchContextLoggingExtensions.GetWithLogging(ISearchContext searchContext, By by)
+   at Atata.XPathComponentScopeFindResult.Get(String xPathCondition)
+   at Atata.StrategyScopeLocator.<>c__DisplayClass3_0.<GetElement>b__0(XPathComponentScopeFindResult x)
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Atata.StrategyScopeLocator.GetElement(SearchOptions searchOptions, String xPathCondition)
+   at Atata.UIComponent`1.OnGetScopeElement(SearchOptions searchOptions)
+   at Atata.StaleSafely.Execute[TResult](Func`2 action, SearchOptions options, Action onExceptionCallback)
+   at Atata.UIComponent.GetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.OnGetScopeContext(SearchOptions searchOptions)
+   at Atata.UIComponent.GetScopeContext(SearchOptions searchOptions)
+   at Atata.ScopeSourceExtensions.GetScopeContext(ScopeSource scopeSource, UIComponent component, SearchOptions options)
+   at Atata.StrategyScopeLocatorExecutor.Execute(StrategyScopeLocatorExecutionData executionData)
+   at Atata.StrategyScopeLocator.GetElements(SearchOptions searchOptions, String xPathCondition)
+   at Atata.ControlList`2.<>c__DisplayClass81_0.<GetItemElements>g__DoGetItemElements|0()
+   at Atata.ControlList`2.GetItemElements(SearchOptions searchOptions, String extraXPath)
+   at Atata.ControlList`2.GetCount()
+   at Atata.DynamicObjectSource`1.get_Object()
+   at Atata.ObjectProvider`2.get_Object()
+   at Atata.ObjectProvider`2.Atata.IObjectProvider<TObject>.get_Object()
+   at Atata.IObjectProviderNumberExtensions.Get[TValue,TOwner](IObjectProvider`2 provider, TValue& value)
+   at AtataSampleProject.SampleTests.TestA() in C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\SampleTests.cs:line 18
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2024-05-27 12:43:27.940 TRACE - > Take screenshot #01 Failed
+2024-05-27 12:43:28.061 TRACE - < Take screenshot #01 Failed (0.121s) >> "01 Products page - Failed.png"
+2024-05-27 12:43:28.062 TRACE - > Take page snapshot #01 Failed
+2024-05-27 12:43:28.151 TRACE - < Take page snapshot #01 Failed (0.089s) >> "01 Products page - Failed.mhtml"
+2024-05-27 12:43:28.375 TRACE < Deinitialize AtataContext (0.447s)
+2024-05-27 12:43:28.378 DEBUG Finished test
+      Total time: 8.614s
+  Initialization: 1.246s | 14.5 %
+       Test body: 6.920s | 80.3 %
+Deinitialization: 0.447s |  5.2 %

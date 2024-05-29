@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "GiPY90E3itE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mallisetti.kumar\\source\\repos\\AtataSampleProject\\AtataSampleProject\\AtataSampleProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\atata\\3.1.0\\atata.3.1.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\atata.bootstrap\\3.0.0\\atata.bootstrap.3.0.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\atata.cli\\2.2.0\\atata.cli.2.2.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\atata.configuration.json\\3.0.0\\atata.configuration.json.3.0.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\atata.webdriverextras\\3.0.0\\atata.webdriverextras.3.0.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\atata.webdriversetup\\2.10.0\\atata.webdriversetup.2.10.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\microsoft.codecoverage\\17.10.0\\microsoft.codecoverage.17.10.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\microsoft.net.test.sdk.17.10.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.10.0\\microsoft.testplatform.objectmodel.17.10.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\microsoft.testplatform.testhost\\17.10.0\\microsoft.testplatform.testhost.17.10.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\nlog\\5.3.2\\nlog.5.3.2.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\nunit\\4.1.0\\nunit.4.1.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\selenium.webdriver\\4.20.0\\selenium.webdriver.4.20.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\mallisetti.kumar\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,26 @@
+2024-05-27 10:48:32.571 DEBUG Starting test: AtataSampleProject.SampleTests.TestA
+2024-05-27 10:48:32.678 TRACE > Initialize AtataContext
+2024-05-27 10:48:32.699 TRACE - Use: "Atata.json" config
+2024-05-27 10:48:32.699 TRACE - Use: "Atata.local.json" config
+2024-05-27 10:48:32.699 TRACE - Set: BaseUrl=https://demo.atata.io/
+2024-05-27 10:48:32.702 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-27 10:48:32.702 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-27 10:48:32.702 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-27 10:48:32.703 TRACE - Set: Culture=en-US
+2024-05-27 10:48:32.703 TRACE - Set: Artifacts=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\artifacts\20240527T104832\SampleTests\TestA
+2024-05-27 10:48:32.714 TRACE - > Initialize Driver
+2024-05-27 10:48:32.720 TRACE - - Created ChromeDriverService { Port=64300, ExecutablePath=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\drivers\chrome\125.0.6422.78\chromedriver.exe }
+2024-05-27 10:48:33.575 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=2b382cc288cf8fc99eb748f6c2e81944 }
+2024-05-27 10:48:33.580 TRACE - < Initialize Driver (0.862s)
+2024-05-27 10:48:33.581 TRACE < Initialize AtataContext (0.902s)
+2024-05-27 10:48:33.609  INFO > Go to "Products" page by URL https://demo.atata.io/products
+2024-05-27 10:48:33.920  INFO < Go to "Products" page by URL https://demo.atata.io/products (0.310s)
+2024-05-27 10:48:33.929  INFO > Assert: title should contain "Products - Atata Sample App"
+2024-05-27 10:48:34.453  INFO < Assert: title should contain "Products - Atata Sample App" (0.523s)
+2024-05-27 10:48:34.455 TRACE > Deinitialize AtataContext
+2024-05-27 10:48:34.663 TRACE < Deinitialize AtataContext (0.208s)
+2024-05-27 10:48:34.666 DEBUG Finished test
+      Total time: 2.138s
+  Initialization: 1.056s | 49.4 %
+       Test body: 0.873s | 40.9 %
+Deinitialization: 0.208s |  9.8 %

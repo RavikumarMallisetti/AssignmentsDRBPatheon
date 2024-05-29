@@ -1,0 +1,100 @@
+2024-05-28 13:33:04.531 DEBUG Starting test: AtataSampleProject.SampleTests.TestA
+2024-05-28 13:33:04.626 TRACE > Initialize AtataContext
+2024-05-28 13:33:04.644 TRACE - Use: "Atata.json" config
+2024-05-28 13:33:04.645 TRACE - Use: "Atata.local.json" config
+2024-05-28 13:33:04.645 TRACE - Set: BaseUrl=https://demo.atata.io/
+2024-05-28 13:33:04.647 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-28 13:33:04.647 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-28 13:33:04.647 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-28 13:33:04.648 TRACE - Set: Culture=en-US
+2024-05-28 13:33:04.648 TRACE - Set: Artifacts=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\artifacts\20240528T133304\SampleTests\TestA
+2024-05-28 13:33:04.649 TRACE - > Initialize Driver
+2024-05-28 13:33:04.655 TRACE - - Created ChromeDriverService { Port=49751, ExecutablePath=C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\bin\Debug\net8.0\drivers\chrome\125.0.6422.78\chromedriver.exe }
+2024-05-28 13:33:05.434 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=29e7a7b95722866177eacfb793d93843 }
+2024-05-28 13:33:05.439 TRACE - < Initialize Driver (0.786s)
+2024-05-28 13:33:05.440 TRACE < Initialize AtataContext (0.814s)
+2024-05-28 13:33:05.480  INFO > Go to "Sign In" page by URL https://demo.atata.io/signin
+2024-05-28 13:33:05.731  INFO < Go to "Sign In" page by URL https://demo.atata.io/signin (0.250s)
+2024-05-28 13:33:05.740 TRACE > Execute trigger VerifyH1Attribute { Index=-1, Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page
+2024-05-28 13:33:05.745  INFO - > Assert: "Sign In" <h1> heading should be present
+2024-05-28 13:33:05.762 TRACE - - > Find visible element by XPath ".//h1[normalize-space(.) = 'Sign In']" in ChromeDriver
+2024-05-28 13:33:06.292 TRACE - - < Find visible element by XPath ".//h1[normalize-space(.) = 'Sign In']" in ChromeDriver (0.529s) >> Element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.8 }
+2024-05-28 13:33:06.293  INFO - < Assert: "Sign In" <h1> heading should be present (0.548s)
+2024-05-28 13:33:06.294 TRACE < Execute trigger VerifyH1Attribute { Index=-1, Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Sign In" page (0.553s)
+2024-05-28 13:33:06.305  INFO > Set "admin@mail.com" to "Email" text input
+2024-05-28 13:33:06.307 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" text input
+2024-05-28 13:33:06.308 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Email" text input
+2024-05-28 13:33:06.311 TRACE - - - > Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Email']/@for]/descendant-or-self::input[@type='text' or not(@type)] | .//label[normalize-space(.) = 'Email']/descendant-or-self::input[@type='text' or not(@type)])" in ChromeDriver
+2024-05-28 13:33:06.323 TRACE - - - < Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Email']/@for]/descendant-or-self::input[@type='text' or not(@type)] | .//label[normalize-space(.) = 'Email']/descendant-or-self::input[@type='text' or not(@type)])" in ChromeDriver (0.012s) >> Element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.7 }
+2024-05-28 13:33:06.324 TRACE - - - > Clear element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.7 }
+2024-05-28 13:33:06.350 TRACE - - - < Clear element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.7 } (0.025s)
+2024-05-28 13:33:06.351 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Email" text input (0.043s)
+2024-05-28 13:33:06.351 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Email" text input
+2024-05-28 13:33:06.353 TRACE - - - > Send keys "admin@mail.com" to element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.7 }
+2024-05-28 13:33:06.411 TRACE - - - < Send keys "admin@mail.com" to element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.7 } (0.058s)
+2024-05-28 13:33:06.411 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Email" text input (0.059s)
+2024-05-28 13:33:06.412 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" text input (0.105s)
+2024-05-28 13:33:06.412  INFO < Set "admin@mail.com" to "Email" text input (0.107s)
+2024-05-28 13:33:06.412  INFO > Set "abc123" to "Password" password input
+2024-05-28 13:33:06.412 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Password" password input
+2024-05-28 13:33:06.413 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Password" password input
+2024-05-28 13:33:06.413 TRACE - - - > Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Password']/@for]/descendant-or-self::input[@type='password'] | .//label[normalize-space(.) = 'Password']/descendant-or-self::input[@type='password'])" in ChromeDriver
+2024-05-28 13:33:06.421 TRACE - - - < Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Password']/@for]/descendant-or-self::input[@type='password'] | .//label[normalize-space(.) = 'Password']/descendant-or-self::input[@type='password'])" in ChromeDriver (0.008s) >> Element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.4 }
+2024-05-28 13:33:06.422 TRACE - - - > Clear element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.4 }
+2024-05-28 13:33:06.440 TRACE - - - < Clear element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.4 } (0.018s)
+2024-05-28 13:33:06.441 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Password" password input (0.027s)
+2024-05-28 13:33:06.441 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Password" password input
+2024-05-28 13:33:06.441 TRACE - - - > Send keys "abc123" to element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.4 }
+2024-05-28 13:33:06.479 TRACE - - - < Send keys "abc123" to element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.4 } (0.037s)
+2024-05-28 13:33:06.479 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Password" password input (0.038s)
+2024-05-28 13:33:06.479 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Password" password input (0.066s)
+2024-05-28 13:33:06.480  INFO < Set "abc123" to "Password" password input (0.067s)
+2024-05-28 13:33:06.480  INFO > Click "Sign In" button
+2024-05-28 13:33:06.481 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Sign In" button
+2024-05-28 13:33:06.483 TRACE - - > Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Sign In' or normalize-space(@value) = 'Sign In']" in ChromeDriver
+2024-05-28 13:33:06.492 TRACE - - < Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Sign In' or normalize-space(@value) = 'Sign In']" in ChromeDriver (0.009s) >> Element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.12 }
+2024-05-28 13:33:06.493 TRACE - - > Click element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.12 }
+2024-05-28 13:33:06.532 TRACE - - < Click element { Id=f.C7D8E3F07B4CE9B293DDF86082EEC6A7.d.7AA0E5DF7B28EAF564E4CB811F4F49CE.e.12 } (0.039s)
+2024-05-28 13:33:06.532 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Sign In" button (0.050s)
+2024-05-28 13:33:06.533  INFO < Click "Sign In" button (0.052s)
+2024-05-28 13:33:06.538  INFO > Go to "Products" page
+2024-05-28 13:33:06.543  INFO < Go to "Products" page (0.005s)
+2024-05-28 13:33:06.544 TRACE > Execute trigger VerifyTitleAttribute { Values=["Products - Atata Sample App"], Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Products" page
+2024-05-28 13:33:06.548  INFO - > Assert: title should equal "Products - Atata Sample App"
+2024-05-28 13:33:11.577 ERROR - - Wrong title
+Expected: "Products - Atata Sample App"
+  Actual: "Users - Atata Sample App"
+   at Atata.AssertionVerificationStrategy.ReportFailure(String message, Exception exception)
+   at Atata.IObjectVerificationProviderExtensions.<>c__DisplayClass5_0`2.<Satisfy>g__ExecuteVerification|0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.VerificationUtils.Verify[TData,TOwner](IObjectVerificationProvider`2 verifier, Action verificationAction, String expectedMessage, TData[] arguments)
+   at Atata.IObjectVerificationProviderExtensions.Satisfy[TObject,TOwner](IObjectVerificationProvider`2 verifier, Func`2 predicate, String message, TObject[] args)
+   at Atata.IObjectVerificationProviderExtensions.MatchAny[TOwner](IObjectVerificationProvider`2 verifier, TermMatch match, String[] expected)
+   at Atata.VerifyTitleAttribute.OnExecute[TOwner](TriggerContext`1 context, String[] values)
+   at Atata.TermVerificationTriggerAttribute.Execute[TOwner](TriggerContext`1 context)
+   at Atata.UIComponent`1.<>c__DisplayClass74_3.<ExecuteTriggers>b__3()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.UIComponent`1.ExecuteTriggers(TriggerEvents on)
+   at Atata.PageObject`1.CompleteInit()
+   at Atata.AtataNavigator.GoToFollowingPageObject[T](UIComponent currentPageObject, T nextPageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at Atata.Go.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at Atata.Control`1.OnGo[TNavigateTo](TNavigateTo navigateToPageObject, Nullable`1 temporarily)
+   at Atata.Control`1.ClickAndGo[TNavigateTo](TNavigateTo navigateToPageObject, Nullable`1 temporarily)
+   at Atata.INavigableExtensions.ClickAndGo[TNavigateTo,TOwner](INavigable`2 navigableControl)
+   at AtataSampleProject.UITestFixture.LoginAndNavigateToProductsPage() in C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\UITestFixture.cs:line 18
+   at AtataSampleProject.SampleTests.TestA() in C:\Users\mallisetti.kumar\source\repos\AtataSampleProject\AtataSampleProject\SampleTests.cs:line 17
+2024-05-28 13:33:11.579  INFO - < Assert: title should equal "Products - Atata Sample App" (5.030s) >> NUnit.Framework.AssertionException: Wrong title...
+2024-05-28 13:33:11.580 TRACE < Execute trigger VerifyTitleAttribute { Values=["Products - Atata Sample App"], Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Products" page (5.035s) >> NUnit.Framework.AssertionException: Wrong title...
+2024-05-28 13:33:11.588 TRACE > Deinitialize AtataContext
+2024-05-28 13:33:11.599 TRACE - > Take screenshot #01 Failed
+2024-05-28 13:33:11.715 TRACE - < Take screenshot #01 Failed (0.115s) >> "01 Products page - Failed.png"
+2024-05-28 13:33:11.716 TRACE - > Take page snapshot #01 Failed
+2024-05-28 13:33:11.809 TRACE - < Take page snapshot #01 Failed (0.093s) >> "01 Products page - Failed.mhtml"
+2024-05-28 13:33:12.051 TRACE < Deinitialize AtataContext (0.463s)
+2024-05-28 13:33:12.054 DEBUG Finished test
+      Total time: 7.571s
+  Initialization: 0.960s | 12.7 %
+       Test body: 6.147s | 81.2 %
+Deinitialization: 0.464s |  6.1 %
